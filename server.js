@@ -21,4 +21,3 @@ app.listen(PORT, () => {
     res.send(`Dog Server Live at: ${PORT}`);
 });
 
-
