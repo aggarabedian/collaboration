@@ -16,6 +16,11 @@ const PORT = 4000;
 app.get("/", (req, res) => {
     res.send("Dog breeds!");
 });
+
+app.get("/dog/:dogBreed", (req, res) => {
+    res.send(`The dog bred you selected was ${req.params.dogBreed}`);
+});
+
 /* Server Bind */
 app.listen(PORT, () => {
     res.send(`Dog Server Live at: ${PORT}`);
