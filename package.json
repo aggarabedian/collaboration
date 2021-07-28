@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/aggarabedian/collaboration/issues"
   },
-  "homepage": "https://github.com/aggarabedian/collaboration#readme"
+  "homepage": "https://github.com/aggarabedian/collaboration#readme",
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
