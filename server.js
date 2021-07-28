@@ -17,8 +17,8 @@ app.get("/", (req, res) => {
     res.send("Dog breeds!");
 });
 
-app.get("/dog/:dogBreed", (req, res) => {
-    res.send(`The dog bred you selected was ${req.params.dogBreed}`);
+app.get("/dog/:dogBreeds", (req, res) => {
+    res.send(`The dog bred you selected was ${req.params.dogBreeds}`);
 });
 
 /* Server Bind */
