@@ -21,3 +21,14 @@ app.listen(PORT, () => {
     res.send(`Dog Server Live at: ${PORT}`);
 });
 
+app.get("/:id", (req, res, next) => {
+    Dog.create(req.body, (error, createdDog) => {
+        if (error) {
+            const context = {
+                error, 
+            };
+            return res.render("new", context);
+        }
+        return res.redirect(`/Dogs/${createdDog.id}`);
+    });
+});
